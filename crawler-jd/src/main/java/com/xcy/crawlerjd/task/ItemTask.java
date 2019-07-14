@@ -1,5 +1,6 @@
 package com.xcy.crawlerjd.task;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.xcy.crawlerjd.pojo.Item;
 import com.xcy.crawlerjd.service.ItemService;
 import com.xcy.crawlerjd.util.HttpClientUtils;
@@ -12,6 +13,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -31,10 +33,11 @@ public class ItemTask {
     @Autowired
     private ItemService itemService;
 
+    private static final ObjectMapper MAPPER = new ObjectMapper();
+
     //当下载完成后,间隔多长时间进行下一次任务
-    @Scheduled(cron = "*/10 * * * * ?")
-    //@Scheduled(fixedRate = 100 * 1000)
-    public void itemTask(){
+    @Scheduled(fixedRate = 100 * 1000)
+    public void itemTask() throws Exception {
         //声明需要解析的初始化地址
         String url = "https://search.jd.com/Search?keyword=手机&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&cid2=653&cid3=655&s=112&click=0&page=";
         System.out.println("sssssfff");
@@ -48,7 +51,7 @@ public class ItemTask {
     }
 
     //解析页面,获取商品信息并保存
-    private void pase(String html){
+    private void pase(String html) throws IOException {
         //解析html,获取document
         Document doc = Jsoup.parse(html);
         //获取spu信息
@@ -83,12 +86,21 @@ public class ItemTask {
                 String picName = this.httpClientUtils.doGetImage(picUrl);
                 item.setPic(picName);
 
-                //item.setPrice();
 
-                //item.setTitle();
+                String priceJson = this.httpClientUtils.doGetHtml("https://p.3.cn/prices/mgets?skuIds=J_" + sku);
+                double price = MAPPER.readTree(priceJson).get(0).get("p").asDouble();
+                item.setPrice(price);
+
+
+                String itemInfo = this.httpClientUtils.doGetHtml(item.getUrl());
+                String title = Jsoup.parse(itemInfo).select("div.sku-name").text();
+                item.setTitle(title);
+
 
                 item.setCreated(new Date());
                 item.setUpdated(item.getCreated());
+
+                this.itemService.save(item);
 
             }
 

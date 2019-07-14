@@ -103,7 +103,7 @@ public class HttpClientUtils {
                     String picName = UUID.randomUUID().toString() + extName;
 
                     //下载图片
-                    OutputStream outputStream = new FileOutputStream(new File("C:\\Users\\xcy\\Desktop" + picName));
+                    OutputStream outputStream = new FileOutputStream(new File("C:\\Users\\xcy\\Desktop\\images\\" + picName));
                     response.getEntity().writeTo(outputStream);
 
                     //返回图片名称

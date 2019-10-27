@@ -13,7 +13,7 @@
     <artifactId>crawler-webmagic</artifactId>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/us.codecraft/webmagic-core -->
+        <!-- webmagic核心包 https://mvnrepository.com/artifact/us.codecraft/webmagic-core -->
         <dependency>
             <groupId>us.codecraft</groupId>
             <artifactId>webmagic-core</artifactId>
@@ -21,7 +21,7 @@
 
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/us.codecraft/webmagic-extension -->
+        <!-- webmagic扩展包 https://mvnrepository.com/artifact/us.codecraft/webmagic-extension -->
         <dependency>
             <groupId>us.codecraft</groupId>
             <artifactId>webmagic-extension</artifactId>

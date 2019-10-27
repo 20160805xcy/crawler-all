@@ -1,0 +1,5 @@
+目前webmagic最新版是0.7.3版本，在爬取只支持TLS1.2的https站点会报错.
+要解决这个问题,可以去github上下载最新的项目代码.
+
+这是从https://github.com/code4craft/webmagic下载下的源码
+这个项目已经支持最新的https

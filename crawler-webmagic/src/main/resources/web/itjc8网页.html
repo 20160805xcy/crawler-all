@@ -1,0 +1,962 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>IT教程吧-编程开发-JAVA  </title> 
+  <meta name="keywords" content="IT教程吧JAVA,java教程,编程开发"> 
+  <meta name="description" content="IT教程吧-编程开发-JAVA "> 
+  <meta name="generator" content="Discuz! X3.4"> 
+  <meta name="author" content="Discuz! Team and Comsenz UI Team"> 
+  <meta name="copyright" content="2001-2017 Comsenz Inc."> 
+  <meta name="MSSmartTagsPreventParsing" content="True"> 
+  <meta http-equiv="MSThemeCompatible" content="Yes"> 
+  <base href="https://www.itjc8.com/">
+  <link rel="stylesheet" type="text/css" href="data/cache/style_3_common.css?k3S">
+  <link rel="stylesheet" type="text/css" href="data/cache/style_3_forum_forumdisplay.css?k3S">
+  <script type="text/javascript">var STYLEID = '3', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'k3S', charset = 'utf-8', discuz_uid = '0', cookiepre = '7sAp_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|金币|,2|贡献|,3|经验|', defaultstyle = '', REPORTURL = 'aHR0cDovL3d3dy5pdGpjOC5jb20vZm9ydW0tNDMtMS5odG1s', SITEURL = 'https://www.itjc8.com/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script> 
+  <script src="static/js/common.js?k3S" type="text/javascript"></script> 
+  <meta name="application-name" content="IT教程吧"> 
+  <meta name="msapplication-tooltip" content="IT教程吧"> 
+  <meta name="msapplication-task" content="name=首页;action-uri=https://www.itjc8.com/forum.php;icon-uri=https://www.itjc8.com/static/image/common/bbs.ico"> 
+  <link rel="archives" title="IT教程吧" href="https://www.itjc8.com/archiver/"> 
+  <script src="static/js/forum.js?k3S" type="text/javascript"></script> 
+  <script type="text/javascript" src="template/dean_flyi_170116/deancss/js/jquery-1.8.3.min.js"></script> 
+  <script type="text/javascript">
+        var jq=jQuery.noConflict();
+     </script> 
+  <script src="template/dean_flyi_170116/deancss/js/deanactions.min.js" type="text/javascript"></script> 
+  <link rel="stylesheet" type="text/css" href="template/dean_flyi_170116/deancss/js/animate.min.css"> 
+  <script>
+    var wow = new WOW({boxClass: 'deanactions',});wow.init();
+    </script> 
+  <script src="template/dean_flyi_170116/deancss/js/jquery.flexslider-min.js" type="text/javascript"></script> 
+  <script type="text/javascript">
+            jQuery(document).ready(function(){
+                jQuery('.flexslider').flexslider({
+                    directionNav: true,
+                    pauseOnAction: false
+                });
+            });
+            </script> 
+  <script src="template/dean_flyi_170116/deancss/js/jquery.easing.1.3.js" type="text/javascript"></script> 
+  <script src="template/dean_flyi_170116/deancss/js/jquery.skitter.js" type="text/javascript"></script> 
+  <script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery(document).ready(function() {
+jQuery(".box_skitter_large").skitter({
+animation: "random",
+interval: 3000,
+numbers: false, 
+numbers_align: "right", 
+hideTools: true,
+controls: false,
+focus: false,
+focus_position: true,
+width_label:'340px', 
+enable_navigation_keys: true,   
+progressbar: false
+});
+});				  
+ 
+});
+</script> 
+  <script src="template/dean_flyi_170116/deancss/js/jquery.pagnation.js" type="text/javascript"></script> 
+  <script type="text/javascript" src="template/dean_flyi_170116/deancss/js/jquery.SuperSlide.2.1.1.js"></script> 
+  <script language="javascript" type="text/javascript">
+function killErrors() {
+return true;
+}
+window.onerror = killErrors;
+</script> 
+ </head> 
+ <body id="nv_forum" class="pg_forumdisplay" onkeydown="if(event.keyCode==27) return false;"> 
+  <div id="append_parent"></div>
+  <div id="ajaxwaitid"></div> 
+  <div id="toptb" class="cl" style="display:none;"> 
+   <div class="wp"> 
+    <div class="z"></div> 
+    <div class="y"> 
+    </div> 
+    <div class="clear"></div> 
+   </div> 
+  </div> 
+  <div id="qmenu_menu" class="p_pop blk" style="display: none;"> 
+   <div class="ptm pbw hm">
+     请 
+    <a href="javascript:;" class="xi2" onclick="lsSubmit()"><strong>登录</strong></a> 后使用快捷导航
+    <br>没有帐号？
+    <a href="member.php?mod=register" class="xi2 xw1">立即注册</a> 
+   </div> 
+   <div id="fjump_menu" class="btda"></div>
+  </div>
+  <div id="hd"> 
+   <div id="deanheader"> 
+    <div class="w1180"> 
+     <div class="deanlogo">
+      <h2><a href="http://www.itjc8.com/" title="IT教程吧"><img src="template/dean_flyi_170116/deancss/logo.png" alt="IT教程吧" border="0"></a></h2>
+     </div> 
+     <div class="deannav"> 
+      <ul> 
+       <li id="mn_N6666"><a href="/" hidefocus="true">首页</a></li> 
+       <li id="mn_Ndfc7"><a href="forum-83-1.html" hidefocus="true">技术博文</a></li> 
+       <li id="mn_N8bed"><a href="forum-82-1.html" hidefocus="true">开发手册</a></li> 
+      </ul> 
+     </div> 
+     <div class="deansearch">
+      <div id="scbar" class="cl"> 
+       <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank"> 
+        <input type="hidden" name="mod" id="scbar_mod" value="search"> 
+        <input type="hidden" name="formhash" value="ff613250"> 
+        <input type="hidden" name="srchtype" value="title"> 
+        <input type="hidden" name="srhfid" value="43"> 
+        <input type="hidden" name="srhlocality" value="forum::forumdisplay"> 
+        <table cellspacing="0" cellpadding="0"> 
+         <tbody>
+          <tr> 
+           <td><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索关键词" autocomplete="off" x-webkit-speech speech></td> 
+           <td><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true">&nbsp;&nbsp;</button></td> 
+          </tr> 
+         </tbody>
+        </table> 
+       </form> 
+      </div> 
+      <ul id="scbar_type_menu" class="p_pop" style="display: none;">
+       <li><a href="javascript:;" rel="curforum" fid="43">本版</a></li>
+       <li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li>
+       <li><a href="javascript:;" rel="user">用户</a></li>
+      </ul> 
+      <script type="text/javascript">
+initSearchmenu('scbar', '');
+</script> 
+     </div> 
+     <div class="deandl"> 
+      <style type="text/css">
+.deanlogin .pipe{ display:none;} 
+.deanlogin dl a{ padding:0;}
+    .selfpad {padding: 0px 0px 0px 0px !important;margin-top: 10px !important;}
+</style> 
+      <div class="deanlogin"> 
+       <style tpye="text/css">
+
+    </style> 
+       <div class="deandenglu"> 
+        <div class="deanundl"> 
+         <div class="deanundlicon"> 
+          <div class="deandlkuang"> 
+           <i></i> 
+           <ul> 
+            <li><a href="javascript:;" onclick="showWindow('login', 'member.php?mod=logging&amp;action=login&amp;viewlostpw=1')">忘记密码？</a></li> 
+            <li><a href="connect.php?mod=login&amp;op=init&amp;referer=index.php&amp;statfrom=login_simple" title="QQ登录">QQ登录</a></li> 
+           </ul> 
+          </div> 
+         </div> 
+         <a class="deandlbtn" href="member.php?mod=logging&amp;action=login">登陆</a> 
+         <a class="deanregbtn" href="member.php?mod=register">注册</a> 
+         <div class="clear"></div> 
+        </div> 
+       </div> 
+       <script type="text/javascript">
+                jq(".deanundlicon").hover(
+                    function(){
+                        jq(".deandlkuang").show();
+                        },
+                    function(){
+                        jq(".deandlkuang").hide();
+                        })
+                jq(".deanundlicon").hover(
+                    function(){
+                        jq(this).addClass("curss");
+                        },
+                    function(){
+                        jq(this).removeClass("curss");
+                        })
+            </script>  
+      </div> 
+     </div> 
+     <div class="clear"></div> 
+    </div> 
+   </div> 
+   <script src="template/dean_flyi_170116/deancss/js/nv.js" type="text/javascript"></script> 
+   <!--侧边工具栏--> 
+   <div class="deansidetools"> 
+    <ul> 
+     <li> <a class="deanqqservices" title="24小时在线咨询" href="http://wpa.qq.com/msgrd?v=3&amp;uin=332879411&amp;site=qq&amp;menu=yes" target="_blank"> </a> </li> 
+     <li> <a class="deansidetoolcontact" title="邮箱(请点)" href="Javascript:alert(&quot;联系邮箱:&nbsp; itjc8@qq.com&quot;)"> </a> </li> 
+     <li> <a class="deansidetoolfankui" title="问题反馈(发帖)" href="/forum-49-1.html" target="_blank"> </a> </li> 
+     <!--返回顶部--> 
+     <div id="scrolltop"> 
+      <span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa"></a></span> 
+     </div> 
+    </ul> 
+   </div> 
+   <div class="wp"> 
+    <div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div>
+   </div> 
+  </div> 
+  <div id="wp" class="wp"> 
+   <style id="diy_style" type="text/css"></style> 
+   <!--[diy=diynavtop]-->
+   <div id="diynavtop" class="area"></div>
+   <!--[/diy]--> 
+   <div id="pt" class="bm cl"> 
+    <div class="z"> 
+     <a href="./" class="nvhm" title="首页">IT教程吧</a>
+     <em>»</em>
+     <a href="https://www.itjc8.com/forum.php">首页</a> 
+     <em>›</em> 
+     <a href="https://www.itjc8.com/forum.php?gid=1">编程开发</a>
+     <em>›</em> 
+     <a href="https://www.itjc8.com/forum-43-1.html">JAVA</a>
+    </div> 
+   </div>
+   <div class="wp"> 
+    <!--[diy=diy1]-->
+    <div id="diy1" class="area"></div>
+    <!--[/diy]--> 
+   </div> 
+   <div class="boardnav"> 
+    <div id="ct" class="wp cl" style="margin-left:105px"> 
+     <div id="sd_bdl" class="bdl" onmouseover="showMenu({'ctrlid':this.id, 'pos':'dz'});" style="width:90px;margin-left:-105px"> 
+      <!--[diy=diyleftsidetop]-->
+      <div id="diyleftsidetop" class="area"></div>
+      <!--[/diy]--> 
+      <div class="tbn" id="forumleftside">
+       <h2 class="bdl_h">版块导航</h2> 
+       <dl class="a" id="lf_1"> 
+        <dt>
+         <a href="javascript:;" hidefocus="true" onclick="leftside('lf_1')" title="编程开发">编程开发</a>
+        </dt>
+        <dd> 
+         <a href="https://www.itjc8.com/forum-2-1.html" title="一起分享">一起分享</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-36-1.html" title="web前端">web前端</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-39-1.html" title="PHP">PHP</a> 
+        </dd> 
+        <dd class="bdl_a"> 
+         <a href="https://www.itjc8.com/forum-43-1.html" title="JAVA">JAVA</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-38-1.html" title="Python">Python</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-73-1.html" title="微信开发">微信开发</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-60-1.html" title="大数据/云计算">大数据/云计算</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-37-1.html" title="C/C++/C#">C/C++/C#</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-40-1.html" title="Android">Android</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-41-1.html" title="iOS">iOS</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-42-1.html" title="Asp/.Net">Asp/.Net</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-64-1.html" title="数据库">数据库</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-75-1.html" title="游戏开发">游戏开发</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-95-1.html" title="机器学习/数据分析">机器学习/数据分析</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-97-1.html" title="产品经理/运营">产品经理/运营</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-otherlang-1.html" title="更多语言">更多语言</a> 
+        </dd> 
+       </dl> 
+       <dl class="" id="lf_52"> 
+        <dt>
+         <a href="javascript:;" hidefocus="true" onclick="leftside('lf_52')" title="运维与安全">运维与安全</a>
+        </dt>
+        <dd> 
+         <a href="https://www.itjc8.com/forum-54-1.html" title="网络技术">网络技术</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-55-1.html" title="系统与运维">系统与运维</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-56-1.html" title="网络安全">网络安全</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-59-1.html" title="黑客教程">黑客教程</a> 
+        </dd> 
+       </dl> 
+       <dl class="" id="lf_66"> 
+        <dt>
+         <a href="javascript:;" hidefocus="true" onclick="leftside('lf_66')" title="设计与影音">设计与影音</a>
+        </dt>
+        <dd> 
+         <a href="https://www.itjc8.com/forum-68-1.html" title="平面设计">平面设计</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-70-1.html" title="UI设计">UI设计</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-69-1.html" title="影音处理">影音处理</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-72-1.html" title="其它设计">其它设计</a> 
+        </dd> 
+       </dl> 
+       <dl class="" id="lf_44"> 
+        <dt>
+         <a href="javascript:;" hidefocus="true" onclick="leftside('lf_44')" title="交流讨论">交流讨论</a>
+        </dt>
+        <dd> 
+         <a href="https://www.itjc8.com/forum-46-1.html" title="交流讨论">交流讨论</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-106-1.html" title="电子书">电子书</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-47-1.html" title="学习路径">学习路径</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-62-1.html" title="资源申购">资源申购</a> 
+        </dd> 
+       </dl> 
+       <dl class="" id="lf_45"> 
+        <dt>
+         <a href="javascript:;" hidefocus="true" onclick="leftside('lf_45')" title="站务中心">站务中心</a>
+        </dt>
+        <dd> 
+         <a href="https://www.itjc8.com/forum-51-1.html" title="本站活动">本站活动</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-49-1.html" title="反馈与建议">反馈与建议</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-63-1.html" title="链接失效反馈">链接失效反馈</a> 
+        </dd> 
+        <dd> 
+         <a href="https://www.itjc8.com/forum-48-1.html" title="公告中心">公告中心</a> 
+        </dd> 
+       </dl> 
+      </div> 
+      <!--[diy=diyleftsidebottom]-->
+      <div id="diyleftsidebottom" class="area"></div>
+      <!--[/diy]--> 
+     </div> 
+     <!--版块介绍--> 
+     <div class="deanbkjsbg"></div> 
+     <div class="deanbkjs"> 
+      <div class="deanjstop"> 
+       <div class="deanjstopl"></div> 
+       <div class="deanjstopr"> 
+        <h3><a class="deanbkname" href="forum.php?mod=forumdisplay&amp;fid=43">JAVA</a></h3> 
+        <div class="deanjsbottom"> 
+         <ul> 
+          <span>今日:</span>
+          <span>37</span>
+          <em>|</em> 
+          <span>主题:</span>
+          <span>235</span> 
+          <div class="clear"></div> 
+         </ul> 
+        </div> 
+        <a href="https://www.itjc8.com/home.php?mod=spacecp&amp;ac=favorite&amp;type=forum&amp;id=43&amp;handlekey=favoriteforum" id="a_favorite" class="deansc" title="收藏本版" onclick="showWindow(this.id, this.href, 'get', 0);">收藏本版 <strong class="xi1" id="number_favorite">(<span id="number_favorite_num">26</span>)</strong></a> 
+        <div class="deanbanzhu y"></div> 
+        <!--新帖--> 
+        <a class="deanfatie" href="javascript:;" id="newspecial" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial'" onclick="showWindow('newthread', 'forum.php?mod=post&amp;action=newthread&amp;fid=43')" title="发新帖">发表新帖</a> 
+        <div class="clear"></div> 
+        <div class="deanjscenter"> 
+        </div> 
+       </div> 
+       <div class="clear"></div> 
+      </div> 
+      <div class="clear"></div> 
+     </div> 
+     <!--论坛聚焦--> 
+     <div class="mn"> 
+      <div class="drag"> 
+       <!--[diy=diy4]-->
+       <div id="diy4" class="area"></div>
+       <!--[/diy]--> 
+      </div> 
+      <div id="pgt" class="bm bw0 pgs cl"> 
+      </div> 
+      <ul id="thread_types" class="ttp bm cl"> 
+       <li id="ttp_all" class="xw1 a"><a href="https://www.itjc8.com/forum-43-1.html">全部</a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=74">入门精通<span class="xg1 num">43</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=75">架构<span class="xg1 num">30</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=77">ssm<span class="xg1 num">10</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=78">spr-boot<span class="xg1 num">22</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=79">spr-cloud<span class="xg1 num">8</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=82">算法<span class="xg1 num">8</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=83">Elastic-Search<span class="xg1 num">5</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=80">面试<span class="xg1 num">11</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=84">svn/git<span class="xg1 num">6</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=163">activiti<span class="xg1 num">2</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=174">spr-security<span class="xg1 num">1</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=175">solro<span class="xg1 num">2</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=176">spr-mvc</a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=181">netty<span class="xg1 num">5</span></a></li> 
+       <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=typeid&amp;typeid=76">其它<span class="xg1 num">55</span></a></li> 
+      </ul> 
+      <script type="text/javascript">showTypes('thread_types');</script> 
+      <div id="threadlist" class="tl bm bmw"> 
+       <div class="th"> 
+        <table cellspacing="0" cellpadding="0"> 
+         <tbody>
+          <tr class="deanactions fadeIn"> 
+           <th colspan="2"> 
+            <div class="deanbiaotou"> 
+             <span id="atarget" onclick="setatarget(-1)" class="y atarget_1" title="在新窗口中打开帖子">新窗</span> 
+             <div class="deanzhuti">
+              <a id="filter_special" href="javascript:;" class="showmenu xi2" onclick="showMenu(this.id)">全部主题</a> 
+             </div> 
+             <div class="deanpaixu"> 
+              <a id="filter_orderby" href="javascript:;" class="showmenu " onclick="showMenu(this.id)" initialized="true">排序方式</a> 
+             </div> 
+             <div class="deangengduo"> 
+              <a id="filter_dateline" href="javascript:;" class="showmenu xi2" onclick="showMenu(this.id)">更多</a> 
+             </div> 
+             <div class="y deanspace"> 
+              <span id="clearstickthread" style="display: none;"> <a href="javascript:;" onclick="clearStickThread()" class="dean_showdisplays" title="显示置顶">显示置顶</a> </span> 
+              <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=lastpost&amp;orderby=lastpost" class="xi2">最新</a>&nbsp;&nbsp; 
+              <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=heat&amp;orderby=heats" class="xi2">热门</a>&nbsp;&nbsp; 
+              <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=hot" class="xi2">热帖</a>&nbsp;&nbsp; 
+              <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=digest&amp;digest=1" class="xi2">精华</a>&nbsp;&nbsp; 
+             </div> 
+            </div> </th> 
+          </tr> 
+         </tbody>
+        </table> 
+       </div> 
+       <div class="bm_c"> 
+        <script type="text/javascript">var lasttime = 1572170176;var listcolspan= '5';</script> 
+        <div id="forumnew" style="display:none"></div> 
+        <form method="post" autocomplete="off" name="moderate" id="moderate" action="forum.php?mod=topicadmin&amp;action=moderate&amp;fid=43&amp;infloat=yes&amp;nopost=yes"> 
+         <input type="hidden" name="formhash" value="ff613250"> 
+         <input type="hidden" name="listextra" value="page%3D1"> 
+         <table summary="forum_43" cellspacing="0" cellpadding="0" id="threadlisttableid"> 
+          <tbody id="stickthread_389"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava s_lnoavatar"> 
+              <a href="https://www.itjc8.com/space-uid-1.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=1&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=1" c="1">itjc8</a> </td> 
+            <th class="common forumtit"> <a href="javascript:void(0);" onclick="hideStickThread('389')" class="showhide y" title="隐藏置顶帖">隐藏置顶帖</a> <a href="https://www.itjc8.com/thread-389-1-1.html" style="font-weight: bold;color: #EE5023;" onclick="atarget(this)" class="s xst">站长亲测-百度网盘不限速下载方法</a> - [阅读权限 <span class="xw1">10</span>]<img src="template/dean_flyi_170116/deancss/forumlist/image_s.gif" alt="attach_img" title="图片附件" align="absmiddle"> <img src="template/dean_flyi_170116/deancss/forumlist/digest_1.png" align="absmiddle" alt="digest" title="精华 1"> <a href="https://www.itjc8.com/thread-389-1-1.html" title="全局置顶主题 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/pin_3.png" alt="全局置顶"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-389-2-1.html">2</a><a href="https://www.itjc8.com/thread-389-3-1.html">3</a><a href="https://www.itjc8.com/thread-389-4-1.html">4</a><a href="https://www.itjc8.com/thread-389-5-1.html">5</a><a href="https://www.itjc8.com/thread-389-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-389-180-1.html">180</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-hjn666666.html" c="1">hjn666666</a></span><em class="deanatsign">@</em> <span title="2019-10-27 17:31">25&nbsp;分钟前</span></i> 
+              <i class="y"> <span class="dean_view">12427</span> <span class="dean_reply">1790</span> <span class="dean_ftdate">2017-6-10</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="stickthread_72"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava s_lnoavatar"> 
+              <a href="https://www.itjc8.com/space-uid-1.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=1&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=1" c="1">itjc8</a> </td> 
+            <th class="common forumtit"> <a href="javascript:void(0);" onclick="hideStickThread('72')" class="showhide y" title="隐藏置顶帖">隐藏置顶帖</a> <a href="https://www.itjc8.com/thread-72-1-1.html" style="font-weight: bold;color: #EE1B2E;background-color: #FFCC00;" onclick="atarget(this)" class="s xst">关于资源,金币与VIP说明</a> - [阅读权限 <span class="xw1">10</span>]<img src="template/dean_flyi_170116/deancss/forumlist/common.gif" alt="attachment" title="附件" align="absmiddle"> <a href="https://www.itjc8.com/thread-72-1-1.html" title="全局置顶主题 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/pin_3.png" alt="全局置顶"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-72-2-1.html">2</a><a href="https://www.itjc8.com/thread-72-3-1.html">3</a><a href="https://www.itjc8.com/thread-72-4-1.html">4</a><a href="https://www.itjc8.com/thread-72-5-1.html">5</a><a href="https://www.itjc8.com/thread-72-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-72-12-1.html">12</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-859z.html" c="1">859z</a></span><em class="deanatsign">@</em> <span title="2019-10-22 16:03">5&nbsp;天前</span></i> 
+              <i class="y"> <span class="dean_view">29837</span> <span class="dean_reply">113</span> <span class="dean_ftdate">2017-4-17</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="separatorline"> 
+           <tr class="ts" style=" height: 15px; line-height: 15px;"> 
+            <td style="border-left: 1px solid #F3F3F3;">&nbsp;</td> 
+            <th style="border-right: 1px solid #F3F3F3;">&nbsp;</th> 
+           </tr> 
+          </tbody> 
+          <script type="text/javascript">hideStickThread();</script> 
+          <tbody id="normalthread_6723"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-24503.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=24503&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=24503" c="1">shhgd97</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6723-1-1.html" onclick="atarget(this)" class="s xst">SSM框架开发学生信息系统笔记源码静态页数据库全2018年12</a> <img src="template/dean_flyi_170116/deancss/forumlist/image_s.gif" alt="attach_img" title="图片附件" align="absmiddle"> <a href="https://www.itjc8.com/thread-6723-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6723-2-1.html">2</a><a href="https://www.itjc8.com/thread-6723-3-1.html">3</a></span> <a href="https://www.itjc8.com/forum.php?mod=redirect&amp;tid=6723&amp;goto=lastpost#lastpost" class="xi1">New</a> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-%25E4%25BB%2585%25E6%25AD%25A4%25E4%25B8%2580%25E4%25BA%25BA.html" c="1">仅此一人</a></span><em class="deanatsign">@</em> <span title="2019-10-27 16:20">1&nbsp;小时前</span></i> 
+              <i class="y"> <span class="dean_view">197</span> <span class="dean_reply">29</span> <span class="dean_ftdate"><span title="2019-10-25">前天&nbsp;00:16</span></span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6695"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-37186.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=37186&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=37186" c="1">lenovi</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6695-1-1.html" onclick="atarget(this)" class="s xst">Elasticsearch高级课程入门到核心技术讲解与项目实战2019</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 178"> <a href="https://www.itjc8.com/thread-6695-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6695-2-1.html">2</a><a href="https://www.itjc8.com/thread-6695-3-1.html">3</a><a href="https://www.itjc8.com/thread-6695-4-1.html">4</a><a href="https://www.itjc8.com/thread-6695-5-1.html">5</a><a href="https://www.itjc8.com/thread-6695-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6695-13-1.html">13</a></span> <a href="https://www.itjc8.com/forum.php?mod=redirect&amp;tid=6695&amp;goto=lastpost#lastpost" class="xi1">New</a> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-vacja.html" c="1">vacja</a></span><em class="deanatsign">@</em> <span title="2019-10-27 15:57">1&nbsp;小时前</span></i> 
+              <i class="y"> <span class="dean_view">989</span> <span class="dean_reply">127</span> <span class="dean_ftdate"><span title="2019-10-21">6&nbsp;天前</span></span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6673"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-20766.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=20766&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=20766" c="1">bataim</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6673-1-1.html" onclick="atarget(this)" class="s xst">Java SSM开发视频考试系统项目实战笔记源码素材数据全2018年</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_1.gif" align="absmiddle" alt="heatlevel" title="热度: 90"> <img src="template/dean_flyi_170116/deancss/forumlist/agree.gif" align="absmiddle" alt="agree" title="帖子被加分"> <a href="https://www.itjc8.com/thread-6673-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6673-2-1.html">2</a><a href="https://www.itjc8.com/thread-6673-3-1.html">3</a><a href="https://www.itjc8.com/thread-6673-4-1.html">4</a><a href="https://www.itjc8.com/thread-6673-5-1.html">5</a><a href="https://www.itjc8.com/thread-6673-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6673-10-1.html">10</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-xrx3161575.html" c="1">xrx3161575</a></span><em class="deanatsign">@</em> <span title="2019-10-26 14:55">昨天&nbsp;14:55</span></i> 
+              <i class="y"> <span class="dean_view">533</span> <span class="dean_reply">91</span> <span class="dean_ftdate">2019-10-18</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6659"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-21078.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=21078&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=21078" c="1">53idrsh</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6659-1-1.html" onclick="atarget(this)" class="s xst">java 源码角度深入拆解Tomcat与Jetty探索java中间件2019新</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 141"> <a href="https://www.itjc8.com/thread-6659-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6659-2-1.html">2</a><a href="https://www.itjc8.com/thread-6659-3-1.html">3</a><a href="https://www.itjc8.com/thread-6659-4-1.html">4</a><a href="https://www.itjc8.com/thread-6659-5-1.html">5</a><a href="https://www.itjc8.com/thread-6659-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6659-14-1.html">14</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-clufeng.html" c="1">clufeng</a></span><em class="deanatsign">@</em> <span title="2019-10-27 10:41">7&nbsp;小时前</span></i> 
+              <i class="y"> <span class="dean_view">654</span> <span class="dean_reply">130</span> <span class="dean_ftdate">2019-10-16</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6644"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-25438.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=25438&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=25438" c="1">cheout</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6644-1-1.html" onclick="atarget(this)" class="s xst">java ssm框架项目实战开发酒店管理系统[全]2019年</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 110"> <a href="https://www.itjc8.com/thread-6644-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6644-2-1.html">2</a><a href="https://www.itjc8.com/thread-6644-3-1.html">3</a><a href="https://www.itjc8.com/thread-6644-4-1.html">4</a><a href="https://www.itjc8.com/thread-6644-5-1.html">5</a><a href="https://www.itjc8.com/thread-6644-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6644-12-1.html">12</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-%25E4%25BB%2585%25E6%25AD%25A4%25E4%25B8%2580%25E4%25BA%25BA.html" c="1">仅此一人</a></span><em class="deanatsign">@</em> <span title="2019-10-27 16:23">1&nbsp;小时前</span></i> 
+              <i class="y"> <span class="dean_view">611</span> <span class="dean_reply">111</span> <span class="dean_ftdate">2019-10-15</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6627"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-24676.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=24676&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=24676" c="1">sasfh</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6627-1-1.html" onclick="atarget(this)" class="s xst">JAVA健康项目实战视频讲义资料全2019年8月新品共36G</a> <img src="template/dean_flyi_170116/deancss/forumlist/image_s.gif" alt="attach_img" title="图片附件" align="absmiddle"> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 189"> <img src="template/dean_flyi_170116/deancss/forumlist/agree.gif" align="absmiddle" alt="agree" title="帖子被加分"> <a href="https://www.itjc8.com/thread-6627-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6627-2-1.html">2</a><a href="https://www.itjc8.com/thread-6627-3-1.html">3</a><a href="https://www.itjc8.com/thread-6627-4-1.html">4</a><a href="https://www.itjc8.com/thread-6627-5-1.html">5</a><a href="https://www.itjc8.com/thread-6627-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6627-11-1.html">11</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-a181025110.html" c="1">a181025110</a></span><em class="deanatsign">@</em> <span title="2019-10-26 22:03">昨天&nbsp;22:03</span></i> 
+              <i class="y"> <span class="dean_view">1418</span> <span class="dean_reply">108</span> <span class="dean_ftdate">2019-10-12</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6569"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-22782.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=22782&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=22782" c="1">fhgk</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6569-1-1.html" onclick="atarget(this)" class="s xst">1811期_毕业设计_全套视频教程（视频、源码、课件）2018年</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_1.gif" align="absmiddle" alt="heatlevel" title="热度: 82"> <a href="https://www.itjc8.com/thread-6569-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6569-2-1.html">2</a><a href="https://www.itjc8.com/thread-6569-3-1.html">3</a><a href="https://www.itjc8.com/thread-6569-4-1.html">4</a><a href="https://www.itjc8.com/thread-6569-5-1.html">5</a><a href="https://www.itjc8.com/thread-6569-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6569-9-1.html">9</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-wangjiesj.html" c="1">wangjiesj</a></span><em class="deanatsign">@</em> <span title="2019-10-26 08:44">昨天&nbsp;08:44</span></i> 
+              <i class="y"> <span class="dean_view">758</span> <span class="dean_reply">85</span> <span class="dean_ftdate">2019-10-5</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6565"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-20766.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=20766&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=20766" c="1">bataim</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6565-1-1.html" onclick="atarget(this)" class="s xst">最新git从入门到项目实战教程2019年8月新课</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 187"> <a href="https://www.itjc8.com/thread-6565-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6565-2-1.html">2</a><a href="https://www.itjc8.com/thread-6565-3-1.html">3</a><a href="https://www.itjc8.com/thread-6565-4-1.html">4</a><a href="https://www.itjc8.com/thread-6565-5-1.html">5</a><a href="https://www.itjc8.com/thread-6565-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6565-12-1.html">12</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-upupgo.html" c="1">upupgo</a></span><em class="deanatsign">@</em> <span title="2019-10-27 17:43">12&nbsp;分钟前</span></i> 
+              <i class="y"> <span class="dean_view">1009</span> <span class="dean_reply">117</span> <span class="dean_ftdate">2019-10-3</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6554"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-20888.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=20888&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=20888" c="1">fresherman</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6554-1-1.html" onclick="atarget(this)" class="s xst">2019马士兵最新算法与数据结构教程</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 110"> <a href="https://www.itjc8.com/thread-6554-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6554-2-1.html">2</a><a href="https://www.itjc8.com/thread-6554-3-1.html">3</a><a href="https://www.itjc8.com/thread-6554-4-1.html">4</a><a href="https://www.itjc8.com/thread-6554-5-1.html">5</a><a href="https://www.itjc8.com/thread-6554-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6554-12-1.html">12</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-xiaofeidaoqq.html" c="1">xiaofeidaoqq</a></span><em class="deanatsign">@</em> <span title="2019-10-27 07:09">10&nbsp;小时前</span></i> 
+              <i class="y"> <span class="dean_view">809</span> <span class="dean_reply">112</span> <span class="dean_ftdate">2019-10-1</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6548"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-18819.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=18819&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=18819" c="1">zebrax</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6548-1-1.html" onclick="atarget(this)" class="s xst">2019 马士兵最新java设计模式视频教程[9.4G]</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_3.gif" align="absmiddle" alt="heatlevel" title="热度: 215"> <a href="https://www.itjc8.com/thread-6548-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6548-2-1.html">2</a><a href="https://www.itjc8.com/thread-6548-3-1.html">3</a><a href="https://www.itjc8.com/thread-6548-4-1.html">4</a><a href="https://www.itjc8.com/thread-6548-5-1.html">5</a><a href="https://www.itjc8.com/thread-6548-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6548-13-1.html">13</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-zhengjl.html" c="1">zhengjl</a></span><em class="deanatsign">@</em> <span title="2019-10-27 00:22">17&nbsp;小时前</span></i> 
+              <i class="y"> <span class="dean_view">1088</span> <span class="dean_reply">129</span> <span class="dean_ftdate">2019-9-29</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6490"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-30344.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=30344&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=30344" c="1">cender</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6490-1-1.html" onclick="atarget(this)" class="s xst">三周搞定互联网大厂面试石杉java进阶分布式面试2019</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_3.gif" align="absmiddle" alt="heatlevel" title="热度: 471"> <a href="https://www.itjc8.com/thread-6490-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6490-2-1.html">2</a><a href="https://www.itjc8.com/thread-6490-3-1.html">3</a><a href="https://www.itjc8.com/thread-6490-4-1.html">4</a><a href="https://www.itjc8.com/thread-6490-5-1.html">5</a><a href="https://www.itjc8.com/thread-6490-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6490-12-1.html">12</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-%25E6%258B%2589%25E6%2599%25AE%25E6%258B%2589%25E6%2596%25AF.html" c="1">拉普拉斯</a></span><em class="deanatsign">@</em> <span title="2019-10-27 15:53">2&nbsp;小时前</span></i> 
+              <i class="y"> <span class="dean_view">2235</span> <span class="dean_reply">111</span> <span class="dean_ftdate">2019-9-25</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6478"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-28639.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=28639&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=28639" c="1">a789dtfj</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6478-1-1.html" onclick="atarget(this)" class="s xst">深入解读Java12与java13新特性2019年9月23结课</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 115"> <a href="https://www.itjc8.com/thread-6478-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6478-2-1.html">2</a><a href="https://www.itjc8.com/thread-6478-3-1.html">3</a><a href="https://www.itjc8.com/thread-6478-4-1.html">4</a><a href="https://www.itjc8.com/thread-6478-5-1.html">5</a><a href="https://www.itjc8.com/thread-6478-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6478-12-1.html">12</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-zx12391.html" c="1">zx12391</a></span><em class="deanatsign">@</em> <span title="2019-10-27 13:28">4&nbsp;小时前</span></i> 
+              <i class="y"> <span class="dean_view">751</span> <span class="dean_reply">115</span> <span class="dean_ftdate">2019-9-24</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6421"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-21132.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=21132&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=21132" c="1">1314520lfs</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6421-1-1.html" onclick="atarget(this)" class="s xst">分布式系统框架Spring+Redis+SSO视频课程价值80全2018</a> <img src="template/dean_flyi_170116/deancss/forumlist/image_s.gif" alt="attach_img" title="图片附件" align="absmiddle"> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 146"> <img src="template/dean_flyi_170116/deancss/forumlist/agree.gif" align="absmiddle" alt="agree" title="帖子被加分"> <a href="https://www.itjc8.com/thread-6421-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6421-2-1.html">2</a><a href="https://www.itjc8.com/thread-6421-3-1.html">3</a><a href="https://www.itjc8.com/thread-6421-4-1.html">4</a><a href="https://www.itjc8.com/thread-6421-5-1.html">5</a><a href="https://www.itjc8.com/thread-6421-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6421-12-1.html">12</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-lys96663857.html" c="1">lys96663857</a></span><em class="deanatsign">@</em> <span title="2019-10-26 20:06">昨天&nbsp;20:06</span></i> 
+              <i class="y"> <span class="dean_view">1278</span> <span class="dean_reply">112</span> <span class="dean_ftdate">2019-9-18</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6425"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-17567.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=17567&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=17567" c="1">halk</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6425-1-1.html" onclick="atarget(this)" class="s xst">S硅谷_宋HK老师_JDBC核心技术视频教程资料全(2019新版)</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_1.gif" align="absmiddle" alt="heatlevel" title="热度: 66"> <a href="https://www.itjc8.com/thread-6425-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6425-2-1.html">2</a><a href="https://www.itjc8.com/thread-6425-3-1.html">3</a><a href="https://www.itjc8.com/thread-6425-4-1.html">4</a><a href="https://www.itjc8.com/thread-6425-5-1.html">5</a><a href="https://www.itjc8.com/thread-6425-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6425-7-1.html">7</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-zhoulan.html" c="1">zhoulan</a></span><em class="deanatsign">@</em> <span title="2019-10-26 20:37">昨天&nbsp;20:37</span></i> 
+              <i class="y"> <span class="dean_view">717</span> <span class="dean_reply">68</span> <span class="dean_ftdate">2019-9-17</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6403"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-18464.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=18464&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=18464" c="1">jqqer</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6403-1-1.html" onclick="atarget(this)" class="s xst">Java性能优化全面性能调优与电商项目调优实战2019新</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_3.gif" align="absmiddle" alt="heatlevel" title="热度: 353"> <a href="https://www.itjc8.com/thread-6403-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6403-2-1.html">2</a><a href="https://www.itjc8.com/thread-6403-3-1.html">3</a><a href="https://www.itjc8.com/thread-6403-4-1.html">4</a><a href="https://www.itjc8.com/thread-6403-5-1.html">5</a><a href="https://www.itjc8.com/thread-6403-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6403-12-1.html">12</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-%25E6%259B%25B9%25E4%25BA%259A%25E7%2594%25B7.html" c="1">曹亚男</a></span><em class="deanatsign">@</em> <span title="2019-10-26 16:54">昨天&nbsp;16:54</span></i> 
+              <i class="y"> <span class="dean_view">2374</span> <span class="dean_reply">114</span> <span class="dean_ftdate">2019-9-13</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6386"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-21078.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=21078&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=21078" c="1">53idrsh</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6386-1-1.html" onclick="atarget(this)" class="s xst">跟传智燕青一起学RabbitMQ消息队列RabbitMQ版本3.7.3 2018年9月</a> <img src="static/image/stamp/011.small.gif" alt="新人帖" align="absmiddle"> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 130"> <a href="https://www.itjc8.com/thread-6386-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6386-2-1.html">2</a><a href="https://www.itjc8.com/thread-6386-3-1.html">3</a><a href="https://www.itjc8.com/thread-6386-4-1.html">4</a><a href="https://www.itjc8.com/thread-6386-5-1.html">5</a><a href="https://www.itjc8.com/thread-6386-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6386-13-1.html">13</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-66666666666.html" c="1">66666666666</a></span><em class="deanatsign">@</em> <span title="2019-10-26 10:30">昨天&nbsp;10:30</span></i> 
+              <i class="y"> <span class="dean_view">1073</span> <span class="dean_reply">127</span> <span class="dean_ftdate">2019-9-10</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6363"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-25026.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=25026&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=25026" c="1">fguhg567</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6363-1-1.html" onclick="atarget(this)" class="s xst">千锋最新ElasticSearch6实战教程2018</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 148"> <a href="https://www.itjc8.com/thread-6363-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6363-2-1.html">2</a><a href="https://www.itjc8.com/thread-6363-3-1.html">3</a><a href="https://www.itjc8.com/thread-6363-4-1.html">4</a><a href="https://www.itjc8.com/thread-6363-5-1.html">5</a><a href="https://www.itjc8.com/thread-6363-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6363-11-1.html">11</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-Yomi.html" c="1">Yomi</a></span><em class="deanatsign">@</em> <span title="2019-10-25 11:04">前天&nbsp;11:04</span></i> 
+              <i class="y"> <span class="dean_view">1174</span> <span class="dean_reply">104</span> <span class="dean_ftdate">2019-9-8</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6321"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-19693.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=19693&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=19693" c="1">zbera19</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6321-1-1.html" onclick="atarget(this)" class="s xst">L果java微服务Api网关框架视频课程2018价值300+</a> <img src="template/dean_flyi_170116/deancss/forumlist/image_s.gif" alt="attach_img" title="图片附件" align="absmiddle"> <img src="template/dean_flyi_170116/deancss/forumlist/hot_2.gif" align="absmiddle" alt="heatlevel" title="热度: 160"> <img src="template/dean_flyi_170116/deancss/forumlist/agree.gif" align="absmiddle" alt="agree" title="帖子被加分"> <a href="https://www.itjc8.com/thread-6321-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6321-2-1.html">2</a><a href="https://www.itjc8.com/thread-6321-3-1.html">3</a><a href="https://www.itjc8.com/thread-6321-4-1.html">4</a><a href="https://www.itjc8.com/thread-6321-5-1.html">5</a><a href="https://www.itjc8.com/thread-6321-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6321-11-1.html">11</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-xanxus.html" c="1">xanxus</a></span><em class="deanatsign">@</em> <span title="2019-10-24 10:31">3&nbsp;天前</span></i> 
+              <i class="y"> <span class="dean_view">1787</span> <span class="dean_reply">102</span> <span class="dean_ftdate">2019-9-3</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6315"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-36297.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=36297&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=36297" c="1">张天梁</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6315-1-1.html" onclick="atarget(this)" class="s xst">D内在线Java高手加薪课1906期-26班 2019</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_3.gif" align="absmiddle" alt="heatlevel" title="热度: 290"> <img src="template/dean_flyi_170116/deancss/forumlist/agree.gif" align="absmiddle" alt="agree" title="帖子被加分"> <a href="https://www.itjc8.com/thread-6315-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6315-2-1.html">2</a><a href="https://www.itjc8.com/thread-6315-3-1.html">3</a><a href="https://www.itjc8.com/thread-6315-4-1.html">4</a><a href="https://www.itjc8.com/thread-6315-5-1.html">5</a><a href="https://www.itjc8.com/thread-6315-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6315-11-1.html">11</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-yixincheng.html" c="1">yixincheng</a></span><em class="deanatsign">@</em> <span title="2019-10-26 22:46">昨天&nbsp;22:46</span></i> 
+              <i class="y"> <span class="dean_view">2469</span> <span class="dean_reply">106</span> <span class="dean_ftdate">2019-9-2</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+          <tbody id="normalthread_6306"> 
+           <tr class="deanactions fadeIn"> 
+            <td class="icn"> 
+             <div class="forumava "> 
+              <a href="https://www.itjc8.com/space-uid-19808.html" c="1"> <img src="https://www.itjc8.com/uc_server/avatar.php?uid=19808&amp;size=middle"> </a> 
+             </div> <a class="deanthreads_author" href="home.php?mod=space&amp;uid=19808" c="1">adiike18</a> </td> 
+            <th class="new forumtit"> <a href="https://www.itjc8.com/thread-6306-1-1.html" onclick="atarget(this)" class="s xst">Java进阶主流java技术与热门开源项目框架中间件项目解读2019</a> <img src="template/dean_flyi_170116/deancss/forumlist/hot_3.gif" align="absmiddle" alt="heatlevel" title="热度: 269"> <img src="template/dean_flyi_170116/deancss/forumlist/agree.gif" align="absmiddle" alt="agree" title="帖子被加分"> <a href="https://www.itjc8.com/thread-6306-1-1.html" title="有新回复 - 新窗口打开" target="_blank"> <img src="template/dean_flyi_170116/deancss/forumlist/folder_new.png"> </a> <span class="tps">&nbsp;...<a href="https://www.itjc8.com/thread-6306-2-1.html">2</a><a href="https://www.itjc8.com/thread-6306-3-1.html">3</a><a href="https://www.itjc8.com/thread-6306-4-1.html">4</a><a href="https://www.itjc8.com/thread-6306-5-1.html">5</a><a href="https://www.itjc8.com/thread-6306-6-1.html">6</a>..<a href="https://www.itjc8.com/thread-6306-11-1.html">11</a></span> 
+             <div class="foruminfo"> 
+              <i class="z"> 最后发表: <span><a href="https://www.itjc8.com/space-username-32121495.html" c="1">32121495</a></span><em class="deanatsign">@</em> <span title="2019-10-26 22:21">昨天&nbsp;22:21</span></i> 
+              <i class="y"> <span class="dean_view">2486</span> <span class="dean_reply">107</span> <span class="dean_ftdate">2019-9-1</span> </i> 
+             </div> </th> 
+            <td class="by"> </td> 
+            <td class="num"></td> 
+            <td class="by"> </td> 
+           </tr> 
+          </tbody> 
+         </table>
+         <!-- end of table "forum_G[fid]" branch 1/3 --> 
+        </form> 
+       </div> 
+      </div> 
+      <div id="filter_special_menu" class="p_pop" style="display:none" change="location.href='forum.php?mod=forumdisplay&amp;fid=43&amp;filter='+$('filter_special').value"> 
+       <ul> 
+        <li><a href="https://www.itjc8.com/forum-43-1.html">全部主题</a></li> 
+       </ul> 
+      </div> 
+      <div id="filter_reward_menu" class="p_pop" style="display:none" change="forum.php?mod=forumdisplay&amp;fid=43&amp;filter=specialtype&amp;specialtype=reward&amp;rewardtype='+$('filter_reward').value"> 
+       <ul> 
+        <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=specialtype&amp;specialtype=reward">全部悬赏</a></li> 
+       </ul> 
+      </div> 
+      <div id="filter_dateline_menu" class="p_pop" style="display:none"> 
+       <ul class="pop_moremenu"> 
+        <li>排序: <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=author&amp;orderby=dateline" class="xw1">发帖时间</a><span class="pipe">|</span> <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=reply&amp;orderby=replies">回复/查看</a><span class="pipe">|</span> <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=reply&amp;orderby=views">查看</a> </li> 
+        <li>时间: <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;orderby=dateline&amp;filter=dateline" class="xw1">全部时间</a><span class="pipe">|</span> <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;orderby=dateline&amp;filter=dateline&amp;dateline=86400">一天</a><span class="pipe">|</span> <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;orderby=dateline&amp;filter=dateline&amp;dateline=172800">两天</a><span class="pipe">|</span> <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;orderby=dateline&amp;filter=dateline&amp;dateline=604800">一周</a><span class="pipe">|</span> <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;orderby=dateline&amp;filter=dateline&amp;dateline=2592000">一个月</a><span class="pipe">|</span> <a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;orderby=dateline&amp;filter=dateline&amp;dateline=7948800">三个月</a> </li> 
+       </ul> 
+      </div> 
+      <div id="filter_orderby_menu" class="p_pop" style="display:none"> 
+       <ul> 
+        <li><a href="https://www.itjc8.com/forum-43-1.html">默认排序</a></li> 
+        <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=author&amp;orderby=dateline">发帖时间</a></li> 
+        <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=reply&amp;orderby=replies">回复/查看</a></li> 
+        <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=reply&amp;orderby=views">查看</a></li> 
+        <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=lastpost&amp;orderby=lastpost">最后发表</a></li> 
+        <li><a href="https://www.itjc8.com/forum.php?mod=forumdisplay&amp;fid=43&amp;filter=heat&amp;orderby=heats">热门</a></li> 
+        <ul> 
+        </ul>
+       </ul>
+      </div> 
+      <div class="pgbtn"> 
+       <a class="bm_h" href="javascript:;" rel="forum.php?mod=forumdisplay&amp;fid=43&amp;page=2" curpage="1" id="autopbn" totalpage="12" picstyle="0" forumdefstyle="">下一页 »</a> 
+      </div> 
+      <script src="static/js/autoloadpage.js?k3S" type="text/javascript"></script> 
+      <div class="bm bw0 pgs cl"> 
+       <span id="fd_page_bottom">
+        <div class="pg">
+         <strong>1</strong>
+         <a href="https://www.itjc8.com/forum-43-2.html">2</a>
+         <a href="https://www.itjc8.com/forum-43-3.html">3</a>
+         <a href="https://www.itjc8.com/forum-43-4.html">4</a>
+         <a href="https://www.itjc8.com/forum-43-5.html">5</a>
+         <a href="https://www.itjc8.com/forum-43-6.html">6</a>
+         <a href="https://www.itjc8.com/forum-43-7.html">7</a>
+         <a href="https://www.itjc8.com/forum-43-8.html">8</a>
+         <a href="https://www.itjc8.com/forum-43-9.html">9</a>
+         <a href="https://www.itjc8.com/forum-43-10.html">10</a>
+         <a href="https://www.itjc8.com/forum-43-12.html" class="last">... 12</a>
+         <label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location='forum.php?mod=forumdisplay&amp;fid=43&amp;page='+this.value;; doane(event);}"><span title="共 12 页"> / 12 页</span></label>
+         <a href="https://www.itjc8.com/forum-43-2.html" class="nxt">下一页</a>
+        </div></span> 
+       <span class="pgb y"><a href="https://www.itjc8.com/forum.php">返&nbsp;回</a></span> 
+       <a href="javascript:;" id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&amp;action=newthread&amp;fid=43')" title="发新帖"></a>
+      </div> 
+      <!--[diy=diyfastposttop]-->
+      <div id="diyfastposttop" class="area"></div>
+      <!--[/diy]--> 
+      <script type="text/javascript">
+var postminchars = parseInt('2');
+var postmaxchars = parseInt('6000');
+var disablepostctrl = parseInt('0');
+var fid = parseInt('43');
+</script> 
+      <div id="f_pst" class="bm"> 
+       <div class="bm_h"> 
+        <h2>快速发帖</h2> 
+       </div> 
+       <div class="bm_c"> 
+        <form method="post" autocomplete="off" id="fastpostform" action="forum.php?mod=post&amp;action=newthread&amp;fid=43&amp;topicsubmit=yes&amp;infloat=yes&amp;handlekey=fastnewpost" onSubmit="return fastpostvalidate(this)"> 
+         <div id="fastpostreturn" style="margin:-5px 0 5px"></div> 
+         <div class="pbt cl"> 
+          <div class="ftid"> 
+           <select name="typeid" id="typeid_fast" width="80"> <option value="0" selected>选择主题分类</option><option value="74">入门精通</option> <option value="75">架构</option> <option value="77">ssm</option> <option value="78">spr-boot</option> <option value="79">spr-cloud</option> <option value="82">算法</option> <option value="83">Elastic-Search</option> <option value="80">面试</option> <option value="84">svn/git</option> <option value="163">activiti</option> <option value="174">spr-security</option> <option value="175">solro</option> <option value="176">spr-mvc</option> <option value="181">netty</option> <option value="76">其它</option> </select> 
+          </div> 
+          <script type="text/javascript" reload="1">simulateSelect('typeid_fast');</script> 
+          <input type="text" id="subject" name="subject" class="px" value="" onkeyup="strLenCalc(this, 'checklen', 80);" tabindex="11" style="width: 25em"> 
+          <span>还可输入 <strong id="checklen">80</strong> 个字符</span> 
+         </div> 
+         <div class="cl"> 
+          <div id="fastsmiliesdiv" class="y">
+           <div id="fastsmiliesdiv_data">
+            <div id="fastsmilies"></div>
+           </div>
+          </div>
+          <div class="hasfsl" id="fastposteditor"> 
+           <div class="tedt"> 
+            <div class="bar"> 
+             <span class="y"> <a href="https://www.itjc8.com/forum.php?mod=post&amp;action=newthread&amp;fid=43" onclick="switchAdvanceMode(this.href);doane(event);">高级模式</a> </span>
+             <script src="static/js/seditor.js?k3S" type="text/javascript"></script> 
+             <div class="fpd"> 
+              <a href="javascript:;" title="文字加粗" class="fbld">B</a> 
+              <a href="javascript:;" title="设置文字颜色" class="fclr" id="fastpostforecolor">Color</a> 
+              <a id="fastpostimg" href="javascript:;" title="图片" class="fmg">Image</a> 
+              <a id="fastposturl" href="javascript:;" title="添加链接" class="flnk">Link</a> 
+              <a id="fastpostquote" href="javascript:;" title="引用" class="fqt">Quote</a> 
+              <a id="fastpostcode" href="javascript:;" title="代码" class="fcd">Code</a> 
+              <a href="javascript:;" class="fsml" id="fastpostsml">Smilies</a> 
+             </div>
+            </div> 
+            <div class="area"> 
+             <div class="pt hm">
+               您需要登录后才可以发帖 
+              <a href="member.php?mod=logging&amp;action=login" onclick="showWindow('login', this.href)" class="xi2">登录</a> | 
+              <a href="member.php?mod=register" class="xi2">立即注册</a> 
+              <a href="https://www.itjc8.com/connect.php?mod=login&amp;op=init&amp;referer=forum.php%3Fmod%3Dforumdisplay%26fid%3D43%26page%3D1&amp;statfrom=login" target="_top" rel="nofollow"><img src="static/image/common/qq_login.gif" class="vm"></a> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+          <div id="seccheck_fastpost"> 
+          </div> 
+          <input type="hidden" name="formhash" value="ff613250"> 
+          <input type="hidden" name="usesig" value=""> 
+         </div> 
+         <p class="ptm pnpost"> <a href="https://www.itjc8.com/home.php?mod=spacecp&amp;ac=credit&amp;op=rule&amp;fid=43" class="y" target="_blank">本版积分规则</a> <button type="submit" onmouseover="checkpostrule('seccheck_fastpost', 'ac=newthread');this.onmouseover=null" name="topicsubmit" id="fastpostsubmit" value="topicsubmit" tabindex="13" class="pn pnc">发表帖子</button> </p> 
+        </form> 
+       </div> 
+      </div> 
+      <!--[diy=diyforumdisplaybottom]-->
+      <div id="diyforumdisplaybottom" class="area"></div>
+      <!--[/diy]--> 
+     </div> 
+    </div> 
+   </div> 
+   <script type="text/javascript">document.onkeyup = function(e){keyPageScroll(e, 0, 1, 'forum.php?mod=forumdisplay&fid=43&filter=&orderby=dateline&', 1);}</script> 
+   <div class="wp mtn"> 
+    <!--[diy=diy3]-->
+    <div id="diy3" class="area"></div>
+    <!--[/diy]--> 
+   </div> 
+   <script>fixed_top_nv();</script> 
+  </div> 
+  <div id="deanfooter"> 
+   <p> <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?699a3d1b7b93f495a71ea0f8664e333e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> </p> 
+  </div> 
+  <script type="text/javascript">
+
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('1 4=0.e.a;1 3=0.o.a;1 6=0.n("k");l 7(){1 2=0.8("2");1 5=0.i("j");5.m="q";2.r(5);6.b(2);1 p=0.8(\'p\');p.d="g<c>-f</c>    h-E@F.G！";2.b(p)}9(4<3&&3>J){7()}9(3<K&&4>3){7();6.H.I="C:u%;v:s;t-w:A;B:x;z-y:D;"}',47,47,'document|var|div|bodyheight|seenheight|divattr|dealobj|setbottom|createElement|if|clientHeight|appendChild|em|innerHTML|documentElement|更新最快的IT教程网|IT教程吧|本站资源源自互联网收集及网友分享|createAttribute|class|deanfooter|function|value|getElementById|body||deanftbottom|setAttributeNode|fixed|margin|100|position|top|0px|index||20px|bottom|width|9999999|如有侵权请发邮件到itjc8|qq|com联系删除|style|cssText|1040|750'.split('|'),0,{}))
+</script> 
+  <div id="ft" style="margin:0;padding:0; height:0;"></div> 
+  <script src="home.php?mod=misc&amp;ac=sendmail&amp;rand=1572170176" type="text/javascript"></script> 
+  <div id="scrolltop" style="display:none;"> 
+   <span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" id="scrolltopa"><b>返回顶部</b></a></span> 
+   <span> <a href="https://www.itjc8.com/forum.php" hidefocus="true" class="returnboard" title="返回版块"><b>返回版块</b></a> </span> 
+  </div> 
+  <script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>   
+ </body>
+</html>

@@ -33,6 +33,7 @@ public class ItemTask {
     @Autowired
     private ItemService itemService;
 
+    //json解析的工具类
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
     //当下载完成后,间隔多长时间进行下一次任务

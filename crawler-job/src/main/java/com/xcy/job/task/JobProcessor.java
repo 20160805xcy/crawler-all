@@ -1,14 +1,14 @@
 package com.xcy.job.task;
 
 import com.xcy.job.pojo.JobInfo;
+import com.xcy.job.utils.SalaryUtil;
 import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.Spider;
-import us.codecraft.webmagic.pipeline.FilePipeline;
 import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.scheduler.BloomFilterDuplicateRemover;
 import us.codecraft.webmagic.scheduler.QueueScheduler;
@@ -64,17 +64,29 @@ public class JobProcessor implements PageProcessor {
         Html html = page.getHtml();
 
         jobInfo.setCompanyName(html.css("div.cn p.cname a", "text").toString());
-        jobInfo.setCompanyAddr(Jsoup.parse(html.css("div.bmsg").nodes().get(1).toString()).text());
+        //因为有的招聘信息,没有写上班的公司地址信息,但是bmsg一定会有一个,第二个才是地址信息(防止后台报错,加个判断)
+        if(html.css("div.bmsg").nodes().size()>2){
+            jobInfo.setCompanyAddr(Jsoup.parse(html.css("div.bmsg").nodes().get(1).toString()).text());
+        }
         jobInfo.setCompanyInfo(Jsoup.parse(html.css("div.tmsg").toString()).text());
-        jobInfo.setJobName(html.css("div.cn h1","text").toString());
-        jobInfo.setJobAddr(html.css("div.cn span.lname","text").toString());
+        jobInfo.setJobName(html.css("div.cn h1", "text").toString());
+        String[] texts = html.css("div.cn p.ltype", "text").toString().split("    ");
+        //因为有的发布时间栏,经过切割后可能是长度为4,5, 取发布时间根据下标来取
+        if (texts.length == 5) {
+            jobInfo.setTime(texts[4]);
+        }
+        if (texts.length == 4) {
+            jobInfo.setTime(texts[3]);
+        }
+        jobInfo.setJobAddr(texts[0]);
         jobInfo.setJobInfo(Jsoup.parse(html.css("div.job_msg").toString()).text());
         jobInfo.setUrl(page.getUrl().toString());
-        //TODO 还没解析完,改天在搞
-        //jobInfo.setsalaryMin();
-        //jobInfo.setsalaryMax();
-        //String time = Jsoup.parse(html.css("div.t1 span").regex(".*发布").toString()).text();
-        //jobInfo.setTime(time);
+        jobInfo.setsalaryMin(SalaryUtil.getLowerSalary(html.css("div.cn strong", "text").toString()));
+        jobInfo.setsalaryMax(SalaryUtil.getHigherSalary(html.css("div.cn strong", "text").toString()));
+
+        //把结果保存起来(webmagic保存于内存,后续通过Pipeline将数据获取到并存于数据库)
+        page.putField("jobInfo", jobInfo);
+
     }
 
     private Site site = Site.me()
@@ -95,6 +107,9 @@ public class JobProcessor implements PageProcessor {
     }
 
 
+    @Autowired
+    private SpringDataPipeline springDataPipeline;
+
     //initialDelay当任务启动后,等待多久执行方法
     //fixedDelay每隔多久执行一次
     @Scheduled(initialDelay = 1000, fixedDelay = 10 * 1000)
@@ -108,6 +123,7 @@ public class JobProcessor implements PageProcessor {
                 .thread(10)
                 //设置布隆过滤器,对1000万条数据进行去重过滤,如果不指定,则webmagic默认使用HashSetDuplicateRemover过滤器
                 .setScheduler(new QueueScheduler().setDuplicateRemover(new BloomFilterDuplicateRemover(10000000)))
+                .addPipeline(this.springDataPipeline)
                 .run();
     }
 

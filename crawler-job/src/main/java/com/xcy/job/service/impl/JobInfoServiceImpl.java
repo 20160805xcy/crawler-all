@@ -45,7 +45,7 @@ public class JobInfoServiceImpl implements JobInfoService {
     public List<JobInfo> findJobInfo(JobInfo jobInfo) {
         //设置查询条件
         Example<JobInfo> example = Example.of(jobInfo);
-        List<JobInfo> list = jobInfoDao.findAll();
+        List<JobInfo> list = jobInfoDao.findAll(example);
         return list;
     }
 }

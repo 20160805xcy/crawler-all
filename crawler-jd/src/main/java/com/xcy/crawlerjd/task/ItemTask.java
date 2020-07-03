@@ -42,11 +42,11 @@ public class ItemTask {
     @Scheduled(fixedRate = 100 * 1000)
     public void itemTask() throws Exception {
         //声明需要解析的初始化地址
-        String url = "https://search.jd.com/Search?keyword=%E6%89%8B%E6%9C%BA&suggest=1.def.0.V19--38s0&wq=%E6%89%8B%E6%9C%BA&page=";
-        System.out.println("sssssfff");
+        String url = "https://search.jd.com/Search?keyword=%E6%89%8B%E6%9C%BA&suggest=1.his.0.0&wq=%E6%89%8B%E6%9C%BA&s=51&click=0&page=";
+        System.out.println("开始进行请求页面信息");
         for (int i = 1; i < 10; i = i + 2) {
             String html = httpClientUtils.doGetHtml(url + i);
-            System.out.println(html);
+            System.out.println("获取到的页面html文本信息: " + html);
             this.pase(html);
 
 

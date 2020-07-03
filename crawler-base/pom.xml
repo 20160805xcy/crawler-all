@@ -6,7 +6,11 @@
 
     <groupId>com.xcy</groupId>
     <artifactId>crawler-base</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>../crawler-es</module>
+    </modules>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->

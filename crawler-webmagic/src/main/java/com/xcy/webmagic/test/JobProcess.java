@@ -18,29 +18,29 @@ public class JobProcess implements PageProcessor {
     @Override
     public void process(Page page) {
         //已经将此页面存于web目录下的itjc8网页.html文件下,以后研究下方3种方式可以拿来做页面分析
-        //System.out.println(page.getHtml());
+        System.out.println(page.getHtml());
 
 
-        //解析返回的数据page,并且把解析的结果放到ResultItems中
-        //方式一:采用css选择器
-        page.putField("result1", page.getHtml().css("th.new.forumtit a.s.xst").all());
-
-        //方式二:采用xPath语法
-        page.putField("result2", page.getHtml().xpath("//*/tr/th[@class=\"new forumtit\"]/a[@class=\"s xst\"]").all());
-
-        //方式三:采用正则表达式
-        //将所有a标签文本信息进行内容匹配,筛选出含有java字样的
-        page.putField("result3", page.getHtml().css("th.new.forumtit a.s.xst").regex(".*java.*").all());
-
-
-        //获取第一条数据
-        page.putField("result4 使用get()方式,获取第一条数据     : ", page.getHtml().css("th.new.forumtit a.s.xst").regex(".*java.*").get());
-        page.putField("result5 使用toString()方式,获取第一条数据: ", page.getHtml().css("th.new.forumtit a.s.xst").regex(".*java.*").toString());
-
-        //获取链接,注意这里links能匹配获取到所有a标签href,以thread-6723-1-1.html结尾的链接地址.然后request会将所有的满足条件的链接存起来.循环请求
-        //需要额外注意哦,page会每次都执行所有的putField("","")方法.
-        page.addTargetRequests(page.getHtml().css("th.new.forumtit a.s.xst").links().regex(".*thread-6723-1-1.html$").all());
-        page.putField("result6 ", page.getHtml().css(".vwthdts.z span").all());
+        ////解析返回的数据page,并且把解析的结果放到ResultItems中
+        ////方式一:采用css选择器
+        //page.putField("result1", page.getHtml().css("th.new.forumtit a.s.xst").all());
+        //
+        ////方式二:采用xPath语法
+        //page.putField("result2", page.getHtml().xpath("//*/tr/th[@class=\"new forumtit\"]/a[@class=\"s xst\"]").all());
+        //
+        ////方式三:采用正则表达式
+        ////将所有a标签文本信息进行内容匹配,筛选出含有java字样的
+        //page.putField("result3", page.getHtml().css("th.new.forumtit a.s.xst").regex(".*java.*").all());
+        //
+        //
+        ////获取第一条数据
+        //page.putField("result4 使用get()方式,获取第一条数据     : ", page.getHtml().css("th.new.forumtit a.s.xst").regex(".*java.*").get());
+        //page.putField("result5 使用toString()方式,获取第一条数据: ", page.getHtml().css("th.new.forumtit a.s.xst").regex(".*java.*").toString());
+        //
+        ////获取链接,注意这里links能匹配获取到所有a标签href,以thread-6723-1-1.html结尾的链接地址.然后request会将所有的满足条件的链接存起来.循环请求
+        ////需要额外注意哦,page会每次都执行所有的putField("","")方法.
+        //page.addTargetRequests(page.getHtml().css("th.new.forumtit a.s.xst").links().regex(".*thread-6723-1-1.html$").all());
+        //page.putField("result6 ", page.getHtml().css(".vwthdts.z span").all());
     }
 
 
@@ -66,7 +66,8 @@ public class JobProcess implements PageProcessor {
     public static void main(String[] args) {
         Spider.create(new JobProcess())
                 //要解析的网页
-                .addUrl("https://www.itjc8.com/forum-43-1.html")
+                //.addUrl("https://www.itjc8.com/forum-43-1.html")
+                .addUrl("https://jdbx.jd.com/")
                 //将结果输出到指定文件夹下(如果注释掉下面这行,则默认会在控制台输出)
                 .addPipeline(new FilePipeline("C:\\Users\\xcy\\Desktop\\result"))
                 //指定线程数量,如果不指定,则默认是1个线程在运行

@@ -133,63 +133,6 @@ public class HttpClientUtils {
         return "";
     }
 
-
-    /**
-     * 下载图片
-     * @param url
-     * @return 图片名称
-     */
-    public String doGetImage222(Long imageId, String url, String title) {
-        CloseableHttpClient httpClient = HttpClients.custom().setConnectionManager(cm).build();
-
-        HttpGet httpGet = new HttpGet(url);
-
-        //设置请求信息
-        httpGet.setConfig(this.getConfig());
-
-        CloseableHttpResponse response = null;
-        try {
-            response = httpClient.execute(httpGet);
-            if (response.getStatusLine().getStatusCode() == 200) {
-                if (response.getEntity() != null) {
-
-                    //下载图片
-                    //获取图片后缀
-                    String extName = url.substring(url.lastIndexOf("."));
-
-                    //当前时间字符串
-                    String format = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
-
-                    //创建图片名,重命名图片
-                    String picName = title + "--" + format + extName;
-
-                    //下载图片
-                    OutputStream outputStream = new FileOutputStream(new File("H:\\images3\\" + picName));
-                    response.getEntity().writeTo(outputStream);
-
-                    //返回图片名称
-                    return title;
-
-                }
-            }
-
-        } catch (IOException e) {
-            logger.error("id为 " + imageId + " 下载失败!!! 标题为: " + title);
-            e.printStackTrace();
-        } finally {
-            if (null != response) {
-                try {
-                    response.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        //没有数据或者出错时,直接返回空串
-        return "";
-    }
-
-
     /**
      * 设置请求的信息
      * @return

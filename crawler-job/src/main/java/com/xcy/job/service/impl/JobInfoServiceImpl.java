@@ -5,6 +5,8 @@ import com.xcy.job.pojo.JobInfo;
 import com.xcy.job.service.JobInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -34,7 +36,7 @@ public class JobInfoServiceImpl implements JobInfoService {
         //执行查询
         List<JobInfo> list = findJobInfo(jobInfo);
 
-        if(list.size() == 0){
+        if (list.size() == 0) {
             //如果为空则表示不存在或者更新了,需要进行新增和更新数据库
             jobInfoDao.saveAndFlush(jobInfo);
         }
@@ -47,5 +49,11 @@ public class JobInfoServiceImpl implements JobInfoService {
         Example<JobInfo> example = Example.of(jobInfo);
         List<JobInfo> list = jobInfoDao.findAll(example);
         return list;
+    }
+
+    @Override
+    public Page<JobInfo> findJobInfoByPage(int page, int rows) {
+        Page<JobInfo> jobInfos = this.jobInfoDao.findAll(PageRequest.of(page - 1, rows));
+        return jobInfos;
     }
 }

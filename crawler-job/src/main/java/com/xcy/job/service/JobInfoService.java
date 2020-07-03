@@ -1,6 +1,7 @@
 package com.xcy.job.service;
 
 import com.xcy.job.pojo.JobInfo;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 
@@ -15,4 +16,6 @@ public interface JobInfoService {
     void save(JobInfo jobInfo);
 
     List<JobInfo> findJobInfo(JobInfo jobInfo);
+
+    Page<JobInfo> findJobInfoByPage(int page, int rows);
 }
